@@ -8,24 +8,18 @@ public class Person {
 
     //Constructores
     public Person() {
-        this.firstName = "Jhon";
-        this.lastName = "Doe";
-        this.email = "jhon.doe@email.com";
-        this.phoneNumber = "1122335481";
+        this("Jhon","Doe");
+        
     }
 
     public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = "jhon.doe@email.com";
-        this.phoneNumber = "1122335481";
+        this(firstName,lastName,"jhon.doe@email.com","1122335481");
+        
     }
 
     public Person(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.phoneNumber = "1122335481";
+        this(firstName,lastName,email,"1122335481");
+        
     }
 
     public Person(String firstName, String lastName, String email, String phoneNumber) {
